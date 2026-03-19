@@ -11,3 +11,8 @@ body {
 .search-bar {
 	justify-content: center;
 }
+
+.search,
+.submit {
+	border-radius: 20px;
+}
