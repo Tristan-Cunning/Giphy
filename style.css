@@ -1,0 +1,13 @@
+/*These are for testing*/
+header {
+	background-color: red;
+}
+body {
+	background-color: green;
+}
+
+/*these are the real style*/
+
+.search-bar {
+	justify-content: center;
+}

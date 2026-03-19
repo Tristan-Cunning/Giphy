@@ -15,7 +15,7 @@ This project requires a bit more work with APIs than was directly covered in the
 You are encouraged to watch the following video that walks through the process of using
 jQuery/Ajax to request data from and API, and display images on screen.
 
-## Helpful, relevant video walk-through
+[Helpful, relevant video walk-through](https://www.youtube.com/watch?v=qevTMc4kVxM)
 
 ## The following requirements are related to how you go about building your project
 
