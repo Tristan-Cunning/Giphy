@@ -34,11 +34,12 @@ async function searchGiphy(submittedSearch) {
 }
 
 function renderGifs(response) {
-	response.data.images.original.url.forEach((url) => {
+	response.data.forEach((gif) => {
+		const url = gif.images.original.url;
 		const GifContainer = document.getElementById("loaded-gifs");
 		GifContainer.innerHTML += `
 			<img src="${url}" 
-			class = "renderedGif" 
+			class = "renderedGif col-4" 
 			alt="Gif">
 			`;
 	});
