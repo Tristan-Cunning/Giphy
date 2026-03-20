@@ -16,3 +16,8 @@ body {
 .submit {
 	border-radius: 20px;
 }
+
+.renderedGif {
+	height: 200px;
+	margin-top: 3%;
+}

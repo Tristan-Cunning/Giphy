@@ -25,7 +25,7 @@ function getSearch() {
 }
 
 async function searchGiphy(submittedSearch) {
-	const URL = `https://api.giphy.com/v1/gifs/search?api_key=lBoPuSCBjgx96yedgFK7vN8hCnkAYI52&q=${submittedSearch}&limit=3&offset=0&rating=g&lang=en&bundle=messaging_non_clips`;
+	const URL = `https://api.giphy.com/v1/gifs/search?api_key=lBoPuSCBjgx96yedgFK7vN8hCnkAYI52&q=${submittedSearch}&limit=8&offset=0&rating=g&lang=en&bundle=messaging_non_clips`;
 	const data = await fetch(URL);
 	const response = await data.json();
 	console.log("Response is : ");
@@ -39,7 +39,7 @@ function renderGifs(response) {
 		const GifContainer = document.getElementById("loaded-gifs");
 		GifContainer.innerHTML += `
 			<img src="${url}" 
-			class = "renderedGif col-4" 
+			class = "renderedGif col-3" 
 			alt="Gif">
 			`;
 	});
