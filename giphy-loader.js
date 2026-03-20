@@ -14,14 +14,44 @@
 // Receive the data
 // Parse the data
 // Display the gifs
-let submittedSearch = null;
+let submittedSearch = "";
 
 function getSearch() {
 	const userInput = document.getElementById("search");
 	submittedSearch = userInput.value;
 	console.log("You submitted " + submittedSearch);
 	console.log("getSearch ran");
-	return submittedSearch; //Will be a call to another function to get the gifs
+	searchGiphy(submittedSearch); //Will be a call to another function to get the gifs
 }
 
+async function searchGiphy(submittedSearch) {
+	const URL = `https://api.giphy.com/v1/gifs/search?api_key=lBoPuSCBjgx96yedgFK7vN8hCnkAYI52&q=${submittedSearch}&limit=3&offset=0&rating=g&lang=en&bundle=messaging_non_clips`;
+	const data = await fetch(URL);
+	const response = await data.json();
+	console.log("Response is : ");
+	console.log(response);
+	renderGifs(response);
+}
+
+function renderGifs(response) {
+	response.data.images.original.url.forEach((url) => {
+		const GifContainer = document.getElementById("loaded-gifs");
+		GifContainer.innerHTML += `
+			<img src="${url}" 
+			class = "renderedGif" 
+			alt="Gif">
+			`;
+	});
+}
+/*for (let index = 0; index < response.length; index++) {
+		const gifUrl = response[index].data.images.original.url;
+		const GifContainer = document.getElementById("loaded-gifs");
+		GifContainer.innerHTML += `
+			<img src="${gifUrl}" 
+			class = "renderedGif" 
+			alt="Gif # ${index + 1}">
+		`;
+	}*/
+
 submit.addEventListener("click", getSearch);
+// data.images.original.url

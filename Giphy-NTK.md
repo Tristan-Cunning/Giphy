@@ -27,3 +27,11 @@
 4. Do not reorder content or filter out our content returned from GIPHY's search of trending API
    responses.
 5. Do not mix GIPHY's content with content from other providers in the same grid.
+
+## Object steps
+
+1. initiate request with fetch
+2. Receive response (Promise)
+3. Parse it into file type (Promise)
+4. Work with the data
+5. Handle errors
