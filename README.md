@@ -1,3 +1,22 @@
+# Description
+
+Tristan Cunningham
+
+This a page where you can make a search through Giphy and it will display the returned gif's.
+You simply place a search in the search bar and submit it. So far I've used html, css,
+bootstrap, and javascript. I wasn't able to actually finish it as i ran out of time on the
+course and had to prioritize finishing the videos rather than doing the work.
+
+I will come back and finish it for my own personal advertisement of my skills.
+
+When I do I will clean up the styling.
+I will also add:
+
+1. Search parameters
+   - Rating, quantity, etc.
+2. Might skip the first x amount of results so that people using it see different gifs than they would elsewhere.
+3. A way to send/share a selected gif.
+
 # Giphy
 
 The goal of this project is to build out your own Giphy search engine that:
@@ -15,7 +34,7 @@ This project requires a bit more work with APIs than was directly covered in the
 You are encouraged to watch the following video that walks through the process of using
 jQuery/Ajax to request data from and API, and display images on screen.
 
-## Helpful, relevant video walk-through
+[Helpful, relevant video walk-through](https://www.youtube.com/watch?v=qevTMc4kVxM)
 
 ## The following requirements are related to how you go about building your project
 
